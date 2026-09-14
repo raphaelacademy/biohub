@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+
+
+
+    
+}
+.info_logo span {
+    font-size: 25px;
+}
+
+  .btn_entrar {
+    background-color: rgb(76, 251, 8);
+    color:black;
+
+} 
+
+.btn_criarconta  {
+    background-color: aqua;
+    color: black;
+}
