@@ -1,17 +1,48 @@
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
+body{margin: 0px;
+    padding: 0px;
+}
 
-
-
+.site {min-height:100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+    background-color: #E4F0FA;
+    color: #F1EDF8;
     
 }
-.info_logo span {
-    font-size: 25px;
+
+
+
+
+/*ABAIXO: TOPO DO SITE(BARRA DE NAVEGAÇÃO)   */
+
+nav{width: 100%;
+    background-color: #0F3E33;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+    
 }
 
-  .btn_entrar {
+
+.LAB_logo img {
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+
+.LAB_logo {
+    margin-left: 30px;
+    display: flex;
+    align-items:center;;
+    font-size: 30px;
+    
+}
+
+.btn_entrar {
     background-color: rgb(76, 251, 8);
     color:black;
 
@@ -21,3 +52,162 @@ nav{
     background-color: aqua;
     color: black;
 }
+
+
+
+
+
+/*ABAIXO: CORPO DO SITE     */
+
+main{
+    padding: 0 20vmin;
+    margin-top: 30px;
+}
+
+
+
+/* FLAVOR TEXT INTRODUTORIO DO SITE*/
+.introdutoria{
+
+    justify-content:space-between ;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-color: #216B57;
+    padding: 10px;
+    border-radius: 20px;
+
+
+   
+    box-shadow: 5px 5px #0E7C7B;
+
+
+    min-height: 700px;
+}
+
+
+/*ESTUDA OQ ESSE FLEX FAZ*/
+.flavor_images {
+    flex: 1 1 25%;
+    min-width: 320px;
+    
+    
+    
+
+    position:relative;
+    height: 700px;
+}
+
+
+.flavor_images img{
+    border: 1px solid #2BB5A0;
+    border-radius: 20px;
+    display: block;
+
+    
+   
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.flavor_images img.ativo{
+    
+    opacity: 1;
+}
+
+
+.flavor_text {
+    justify-content: center;
+    align-items: center;
+    
+
+    flex: 1 1 320px;           
+}
+
+.Credito_a_liga {
+    font-size: 15px;
+}
+
+.logo_unialfa img {
+
+    width: 50px ;
+    border-radius: 8px;
+    margin-right: 15px;
+
+}
+
+
+.logo_unialfa {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+
+
+
+
+
+/*BLOCO DE STATUS*/
+.status{
+    margin-top: 45px;
+
+    flex-wrap: wrap;
+    
+}
+
+.status_bloco{
+    color:#216651;
+    border-radius: 6px;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    overflow: hidden;
+
+
+    background-color: #216651;
+    border: 1px solid #216651;
+
+    min-height: 100px;
+}
+
+.status_bloco  div{
+    background-color:#FFEDD4 ;
+    border-radius: 5px;
+    margin: 1px;
+
+    flex: 1 1 32%;
+    padding: 5px;
+    max-width: none;
+}
+
+.status_nuneros{
+    display: flex;
+    font-size: 55px;
+}
+
+.status_text{
+    font-size: 12px;
+    margin: 5px;
+
+
+
+}
+
+
+
+
+/*ABAIXO: RODAPÉ DO SITE     */
+
+
+footer{
+    margin-top: 200px;
+    background-color: #7B4FB4;
+    display: flex;}
