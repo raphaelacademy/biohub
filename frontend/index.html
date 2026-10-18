@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head >
-        <meta charset="UTf-8">
-        <title>BioHub - Portal Academico</title>
+<head>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Biohub</title>
+</head>
+<body>
+    
+    <main id="main">
 
-        <!-- LINK PARA PASTA CSS-->
-         <link rel="stylesheet" href="css/style.css"> 
-
-    </head>
-
-    <body>
-        <header>
-            <nav>
-
-            <div class="info_logo">
-                    
-                <img src="img/img_logo_bihub.png" alt="Logo_BioHub" width="70">
-                <span>
-                    BioHub - Portal Academico
-                </span>
+        <section id="login">
+            <div id="login-panel">
+                <div id="logo">
+                    <img src="assets/logo.png" width="100" alt="Logo Biohub">
+                </div>
+                <form action="" id="login-form">
+                    <label for="matricula">Matrícula</label>
+                    <input type="number" name="matricula" id="matricula" autocomplete="username" required>
+                    <label for="password">Senha</label>
+                    <div class="password-field">
+                        <input type="password" name="password" id="password" autocomplete="current-password" required>
+                        <button type="button" id="visible-password" aria-controls="password" aria-pressed="false">Mostrar</button>
+                    </div>
+                    <button type="button" id="btn-forgot-password">Esqueceu a senha?</button>
+                    <button type="submit" id="btn-login" aria-busy="false">
+                        <span class="button-label">Entrar</span>
+                        <span class="spinner" aria-hidden="true"></span>
+                    </button>
+                    <p id="login-message" role="status" aria-live="polite"></p>
+                    <p id="demo-footer">Biohub - Demonstração</p>
+                </form>
             </div>
-            <!-- DIV DOS BOTOES DO NAVBAR-->
-            <div class="botoes_iniciais_login">
-                <button type="button" class="btn_entrar">Entrar</button>
+        </section>
 
-                <button type="button" class="btn_criarconta">Criar Conta</button>
+    </main>
 
-            </div>
-            <div class="icone_menu">
-
-                <button type="button">&#9776;</button>
-            </div>
-
-                
-            </nav>
-        </header>
-    </body>
+    <script src="./js/script.js"></script>
+</body>
 </html>
