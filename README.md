@@ -11,7 +11,7 @@ pip install -r backend/requirements.txt
 python backend/app.py
 ```
 
-Depois, acesse [http://127.0.0.1:8000](http://127.0.0.1:8000) no navegador.
+Depois, acesse [http://127.0.0.1:5500](http://127.0.0.1:5500) no navegador.
 Para parar o servidor, pressione `Ctrl+C` no terminal.
 
 ## CREDENCIAIS DE TESTE
