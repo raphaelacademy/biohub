@@ -6,7 +6,7 @@ const passwordInput = document.querySelector("#password");
 const forgotPasswordButton = document.querySelector("#btn-forgot-password");
 const passwordVisibilityButton = document.querySelector("#visible-password");
 
-const LOGIN_ENDPOINT = "/api/login";
+const LOGIN_ENDPOINT = "http://127.0.0.1:8000/api/login";
 
 function setLoginLoading(isLoading) {
     loginButton.classList.toggle("is-loading", isLoading);
