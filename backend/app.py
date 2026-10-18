@@ -4,12 +4,19 @@ from pathlib import Path
 from flask import Flask, abort, jsonify, request, send_from_directory
 
 
+PROJECT_DIRECTORY = Path(__file__).resolve().parent.parent
+FRONTEND_DIRECTORY = PROJECT_DIRECTORY / "frontend"
 DEMO_CREDENTIALS = {
     "2024001": "biohub123",
     "2024002": "biohub456",
     "2024003": "biohub789",
 }
 MAX_REQUEST_SIZE = 4096
+STATIC_FILES = {
+    "css/style.css": "css/style.css",
+    "js/script.js": "js/script.js",
+    "assets/logo.png": "assets/logo.png",
+}
 
 app = Flask(__name__, static_folder=None)
 app.config["MAX_CONTENT_LENGTH"] = MAX_REQUEST_SIZE
@@ -21,6 +28,20 @@ def add_cors_headers(response):
     response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
     return response
+
+
+@app.get("/")
+def index():
+    return send_from_directory(FRONTEND_DIRECTORY, "index.html")
+
+
+@app.get("/<path:filename>")
+def static_file(filename):
+    file_path = STATIC_FILES.get(filename)
+    if file_path is None:
+        abort(404)
+    return send_from_directory(FRONTEND_DIRECTORY, file_path)
+
 
 @app.route("/api/login", methods=["POST", "OPTIONS"])
 def login():
