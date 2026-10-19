@@ -1,39 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head >
-        <meta charset="UTf-8">
-        <title>BioHub - Portal Academico</title>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biohub</title>
 
-        <!-- LINK PARA PASTA CSS-->
-         <link rel="stylesheet" href="css/style.css"> 
-
+        <link rel="stylesheet" href="style.css">
     </head>
-
+    
     <body>
         <header>
-            <nav>
-
-            <div class="info_logo">
-                    
-                <img src="img/img_logo_bihub.png" alt="Logo_BioHub" width="70">
-                <span>
-                    BioHub - Portal Academico
+          <div class="faixa-superior">
+                <span class="ponto-verde"></span>
+                <strong>Biohub</strong>
+                <span class="nome-faixa">
+                    Liga Acadêmica de Biomedicina
                 </span>
+          </div>
+           <div class="header-principal">
+            <div class="logo-titulo">
+                <img src ="img/logo-projeto.png" class="logo" alt="logo do projeto">
+            <div class="titulo">
+                <h1>BioHub</h1>
+            <p>Liga Acadêmica de Biomedicina</p>
             </div>
-            <!-- DIV DOS BOTOES DO NAVBAR-->
-            <div class="botoes_iniciais_login">
-                <button type="button" class="btn_entrar">Entrar</button>
-
-                <button type="button" class="btn_criarconta">Criar Conta</button>
-
             </div>
-            <div class="icone_menu">
-
-                <button type="button">&#9776;</button>
-            </div>
-
+            <button class="menu-hamburger" id="menu-hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-links">
+                ☰
+            </button>
+            <nav>
+                <div class="links" id="menu-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#noticias">Notícias</a>
+                    <a href="#artigos">Artigos</a>
+                    <a href="#encontros">Encontros</a>
                 
+                    <a href="#area-da-liga" class="botao-especial">
+                        Área da Liga <span class="seta">&#8594;</span>
+                    </a>
+                </div>
             </nav>
+           </div> 
         </header>
+        
+        <main>
+            <section class="hero" id="inicio">
+
+    <div class="hero-conteudo">
+
+        <div class="hero-marca">
+            <img src="img/logo-projeto.png" alt="Logo BioHub">
+
+            <div class="hero-marca-info">
+                <span>MARCA DA LIGA</span>
+                <div class="marca-detalhes">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <span class="hero-categoria">
+            LIGA ACADÊMICA DE BIOMEDICINA
+        </span>
+
+        <h2>
+            Ciência que conecta.
+            <span>Conhecimento que transforma.</span>
+        </h2>
+
+        <p class="hero-descricao">
+            Artigos científicos, notícias e encontros para estudantes
+            que constroem o futuro da Biomedicina.
+        </p>
+
+        <div class="hero-botoes">
+            <a href="#artigos" class="hero-botao">
+                Explorar artigos <span>→</span>
+            </a>
+
+            <a href="#encontros" class="hero-botao secundario">
+                Ver agenda
+            </a>
+        </div>
+
+        <div class="hero-comunidade">
+            <div class="comunidade-icones">
+                <span>BI</span>
+                <span>PE</span>
+                <span>CB</span>
+            </div>
+
+            <div class="comunidade-texto">
+                <strong>Conhecimento para todos</strong>
+                <span>Faça parte dessa comunidade acadêmica.</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-imagem">
+
+        <img src="img/img-card1.png"
+             alt="Estudo e pesquisa em laboratório">
+
+        <div class="hero-legenda">
+            <span class="hero-numero">01</span>
+
+            <div>
+                <strong>Pesquisa em foco</strong>
+                <span>Ciência e conhecimento em Biomedicina</span>
+            </div>
+        </div>
+
+        </div>
+
+        </section>
+        </main>
+        <script src="script.js"></script>
     </body>
 </html>
