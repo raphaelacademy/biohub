@@ -472,7 +472,7 @@ header {
     display: flex;
     width: 80%;
     margin-top: 24px;
-    border: 1px solid #dce5df;
+    border: 1px solid rgba(185, 226, 214, 0.25);
     border-radius: 20px;
     overflow: hidden;
     margin: 24px auto 0;
