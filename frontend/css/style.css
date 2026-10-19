@@ -1,23 +1,9 @@
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-
-
-
+/* Estilo para garantir que todas as imagens de notícias fiquem iguais */
+.imagem-noticia {
+    width: 100%;           /* Diz para a imagem ocupar toda a largura do cartão */
+    height: 200px;         /* Define a altura fixa do nosso "porta-retratos" */
+    object-fit: cover;     /* A MÁGICA: Preenche sem esticar, cortando as sobras! */
     
-}
-.info_logo span {
-    font-size: 25px;
-}
-
-  .btn_entrar {
-    background-color: rgb(76, 251, 8);
-    color:black;
-
-} 
-
-.btn_criarconta  {
-    background-color: aqua;
-    color: black;
+    /* Dica extra de design: arredondar só as bordas de cima da imagem */
+    border-radius: 8px 8px 0 0; 
 }
