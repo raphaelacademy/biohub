@@ -18,7 +18,14 @@ header {
     text-align: left;
 }
 .faixa-superior {
-    background-color: #1B5E20;
+    background: linear-gradient(
+        110deg,
+        #004D32 0%,
+        #063B3B 25%,
+        #172B49 48%,
+        #35105C 72%,
+        #6500A8 100%
+    );
     color: white;
     padding: 8px 5%;
     font-size: 13px;
@@ -487,12 +494,12 @@ header {
     border-right: none;
 }
 .stat-item h2{
-    color: #245b4a;
+    color: #FFFFFF;
     font-size: 34px;
     margin: 0 0 8px;
 }
 .stat-item p {
-    color: #52635b;
+    color: #FFFFFF;
     font-size: 14px;
     margin: 0;
 }
