@@ -536,13 +536,13 @@ header {
 .section-label {
     font-size: 11px;
     letter-spacing: 2px;
-    color: #B04DDB;
+    color: #c6c6c7;
     font-weight: bold;
 }
 .news-header h2 {
     font-size: 36px;
     margin: 6px 0 0;
-    color: #172b25;
+    color: white;
 }
 .view-all {
     color: white;
