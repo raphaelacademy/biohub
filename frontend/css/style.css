@@ -508,9 +508,11 @@ header {
     margin: 0;
 }
 .news-section {
-    width: 100%;
+    width: 90%;
     max-width: 1400px;
     margin: 60px auto;
+    padding: 32px 24px 24px;
+    box-sizing: border-box;
     background: linear-gradient(
         110deg,
         #004D32 0%,
@@ -519,7 +521,7 @@ header {
         #35105C 72%,
         #6500A8 100%
     );
-    border-radius: 20px;
+    border-radius: 24px;
 }
 .news-header {
     display: flex;
