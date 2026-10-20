@@ -511,6 +511,14 @@ header {
     width: 90%;
     max-width: 1400px;
     margin: 60px auto;
+    background: linear-gradient(
+        110deg,
+        #004D32 0%,
+        #063B3B 25%,
+        #172B49 48%,
+        #35105C 72%,
+        #6500A8 100%
+    );
 }
 .news-header {
     display: flex;
