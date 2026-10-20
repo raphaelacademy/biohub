@@ -508,7 +508,7 @@ header {
     margin: 0;
 }
 .news-section {
-    width: 90%;
+    width: 100%;
     max-width: 1400px;
     margin: 60px auto;
     background: linear-gradient(
