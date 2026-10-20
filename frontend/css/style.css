@@ -536,7 +536,7 @@ header {
 .section-label {
     font-size: 11px;
     letter-spacing: 2px;
-    color: white;
+    color: #B04DDB;
     font-weight: bold;
 }
 .news-header h2 {
@@ -545,7 +545,7 @@ header {
     color: #172b25;
 }
 .view-all {
-    color: #243d33;
+    color: white;
     text-decoration: none;
 }
 .news-grid {
