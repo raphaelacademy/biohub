@@ -519,6 +519,7 @@ header {
         #35105C 72%,
         #6500A8 100%
     );
+    border-radius: 20px;
 }
 .news-header {
     display: flex;
