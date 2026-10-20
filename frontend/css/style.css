@@ -557,10 +557,6 @@ header {
     display: flex;
     flex-direction: column;
     flex: 1;
-    box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.28),
-    0 0 25px rgba(76, 175, 80, 0.18),
-    0 0 45px rgba(123, 31, 162, 0.32);
 }
 .news-category {
     font-size: 10px;
@@ -645,6 +641,9 @@ header {
 
     .hero-botao {
         padding: 11px 12px;
+    }
+    .news-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 .menu-hamburger {
@@ -793,5 +792,20 @@ header {
     .stat-item {
         padding: 16px;
         border-bottom: 1px solid #dce5df;
+    }
+    .news-section {
+        width: 92%;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .news-header h2 {
+        font-size: 28px;
+    }
+    .news-card img {
+        height: 220px;
+    }
+    .news-content {
+        padding: 18px;
     }
 } 
