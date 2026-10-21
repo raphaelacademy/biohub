@@ -1,0 +1,42 @@
+:root {
+    --lilas-rosa: #FBCBF2;
+    --lilas-etiqueta: #DBB8E3;
+    --lilas-suave: #E9D7FA;
+    --lilas-acinzentado: #C1BBE3;
+    --lavanda-suave: #CFD2FF;
+
+    --verde-medio: #216651;
+    --verde-hover: #3E9278;
+    --verde-menta: #74BAA0;
+    --verde-claro: #B8D8C0;
+    --verde-suave: #D0E0D3;
+    --verde-hero: #022E2D;
+    --verde-manguezal: #005856;
+
+    --roxo-profundo: #3C0145;
+    --roxo-escuro: #341539;
+    --roxo-medio: #673165;
+
+    --fundo-pagina: #FBF8FD;
+    --nevoa-lilas: #F6EFFB;
+    --nevoa-verde: #EEF4F0;
+
+    --texto-escuro: #1A202C;
+    --texto-suave: #4A5568;
+    --branco: #FFFFFF;
+
+    --fonte-principal: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --fonte-titulo: 'Fraunces', Georgia, 'Times New Roman', serif;
+
+    --largura-max: 1200px;
+    --margem-lateral: max(1.5rem, calc((100% - var(--largura-max)) / 2));
+    --raio-cartao: 20px;
+    --raio-painel: 28px;
+    --sombra-cartao: 0 14px 30px rgba(52, 21, 57, 0.14);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
