@@ -99,3 +99,64 @@ a:focus-visible {
     background-color: var(--roxo-escuro);
     transform: translateY(-2px);
 }
+
+.btn-secundario {
+    border: 2px solid var(--verde-manguezal);
+    color: var(--verde-manguezal);
+}
+
+.btn-secundario:hover {
+    background-color: var(--verde-manguezal);
+    color: var(branco);
+    transform: translateY(-2px);
+}
+
+.btn-claro {
+    background-color: var(--lilas-suave);
+    color: var(--roxo-escuro);
+}
+
+.btn-claro:hover {
+    background-color: var(--branco);
+    transform: translateY(-2px);
+}
+
+.cabecalho-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.sobretitulo {
+    margin-bottom: 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--roxo-medio);
+}
+
+.cabecalho-secao h2 {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--roxo-escuro);
+}
+
+.link-secao {
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--verde-manguezal);
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--verde-manguezal);
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.link-secao:hover {
+    color: var(--verde-hover);
+    border-color: var(--verde-hover);
+}
