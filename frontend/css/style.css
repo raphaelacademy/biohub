@@ -160,3 +160,31 @@ a:focus-visible {
     color: var(--verde-hover);
     border-color: var(--verde-hover);
 }
+
+
+.categoria {
+    align-self: flex-start;
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.categoria-liga {
+    background-color: var(--verde-claro);
+    color: var(--roxo-profundo);
+}
+
+.categoria-congresso {
+    background-color: var(--lavanda-suave);
+    color: var(--roxo-profundo);
+}
+
+.categoria-representacao {
+    background-color: var(--lilas-rosa);
+    color: var(--roxo-profundo);
+}
+
