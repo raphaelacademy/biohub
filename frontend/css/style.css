@@ -188,3 +188,75 @@ a:focus-visible {
     color: var(--roxo-profundo);
 }
 
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.8rem var(--margem-lateral);
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--lilas-suave);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-nome {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--roxo-escuro);
+}
+
+.menu ul {
+    display: flex;
+    gap: 0.35rem;
+}
+
+.menu a {
+    display: block;
+    padding: 0.55rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--texto-escuro);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.menu a[aria-current="page"] {
+    background-color: var(--lilas-suave);
+    color: var(--roxo-escuro);
+    font-weight: 600;
+}
+
+.botao-area-liga {
+    padding: 0.75rem 1.3rem;
+    border-radius: 999px;
+    background-color: var(--verde-manguezal);
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--branco);
+    transition: background-color 0.2s eas, transform 0.2 ease;
+}
+
+.botao-area-liga:hover {
+    background-color: var(--verde-medio);
+    transform: translateY(-1px);
+}
