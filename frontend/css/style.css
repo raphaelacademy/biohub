@@ -64,7 +64,7 @@ ul {
 
 img {
     display: block;
-    max-width: 10%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -82,12 +82,12 @@ a:focus-visible {
 .btn-primario,
 .btn-secundario,
 .btn-claro {
-    display:inline block;
+    display: inline block;
     padding: 0.85rem 1.5rem;
     border-radius: 999px;
     font-size: 0.95rem;
     font-weight: 600;
-    transition: background-color 0.2s ease, color 0.2s easem transform 0.2 ease;
+    transition: background-color 0.2s ease, color 0.2s ease transform 0.2 ease;
 }
 
 .btn-primario {
@@ -107,7 +107,7 @@ a:focus-visible {
 
 .btn-secundario:hover {
     background-color: var(--verde-manguezal);
-    color: var(branco);
+    color: var(--branco);
     transform: translateY(-2px);
 }
 
@@ -210,8 +210,8 @@ a:focus-visible {
 }
 
 .logo-img {
-    width: 52px;
-    height: 52px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -238,6 +238,10 @@ a:focus-visible {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.menu a:hover {
+    display: flex;
+    gap: 0.35rem;
+}
 
 .menu a[aria-current="page"] {
     background-color: var(--lilas-suave);
@@ -253,7 +257,7 @@ a:focus-visible {
     font-weight: 600;
     white-space: nowrap;
     color: var(--branco);
-    transition: background-color 0.2s eas, transform 0.2 ease;
+    transition: background-color 0.2s ease, transform 0.2 ease;
 }
 
 .botao-area-liga:hover {
@@ -320,7 +324,6 @@ a:focus-visible {
 .titulo-principal {
     font-family: var(--fonte-titulo);
     font-size: clamp(2.5rem, 5.2vw, 4.2rem);
-    font-weight: 600;
     font-weight: 1.05;
     letter-spacing: -0.02em;
     color: var(--roxo-escuro);
@@ -336,7 +339,7 @@ a:focus-visible {
 .texto-descritivo {
     max-width: 34rem;
     font-size: 1.1rem;
-    color: var(--texto-suave)
+    color: var(--texto-suave);
 }
 
 .hero-botoes {
