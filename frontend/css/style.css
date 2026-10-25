@@ -525,3 +525,130 @@ a:focus-visible {
     font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.7);
 }
+
+
+.encontros {
+    padding: 6rem var(--margem-lateral);
+    background-color: var(--nevoa-verde);
+}
+
+.encontros-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    gap: 1.5rem;
+}
+
+/* Painel roxo à esquerda */
+.encontros-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 2.5rem;
+    border-radius: var(--raio-painel);
+    background: linear-gradient(160deg, var(--roxo-escuro) 0%, var(--roxo-profundo) 100%);
+    color: var(--branco);
+}
+
+.encontros-intro .sobretitulo {
+    margin-bottom: 0;
+    color: var(--lilas-etiqueta);
+}
+
+.encontros-intro h2 {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.9rem, 3vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.lista-encontros {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.cartao-evento {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 1.5rem 1.25rem 1.25rem;
+    background-color: var(--branco);
+    border: 1px solid var(--lilas-suave);
+    border-radius: var(--raio-cartao);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.cartao-evento:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-cartao);
+}
+
+.data-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 78px;
+    padding: 0.9rem 1rem;
+    border-radius: 14px;
+    background-color: var(--lilas-suave);
+    text-align: center;
+}
+
+.data-evento .dia {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--roxo-medio);
+}
+
+.data-evento .mes {
+    margin-top: 0.35rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--roxo-escuro);
+}
+
+.info-evento {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-evento h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--roxo-escuro);
+}
+
+.detalhes-evento {
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+.acao-evento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--lilas-etiqueta);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: var(--roxo-medio);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.acao-evento:hover {
+    background-color: var(--roxo-medio);
+    border-color: var(--roxo-medio);
+    color: var(--branco);
+}
+
+
