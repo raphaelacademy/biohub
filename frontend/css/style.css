@@ -410,3 +410,118 @@ a:focus-visible {
     font-size: 0.95rem;
     color: var(--roxo-escuro);
 }
+
+
+.noticias {
+    padding: 6rem var(--margem-lateral);
+}
+
+.grid-noticias {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 1.5rem;
+}
+
+.cartao-noticia {
+    overflow: hidden;
+    background-color: var(branco);
+    border: 1px solid var(--lilas-suave);
+    border-radius: var(--raio-cartao);
+    transition: transform 0.25 ease, box-shadow 0.25 ease;
+}
+
+.cartao-noticia:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-cartao);
+}
+
+.cartao-noticia-link {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    height: 100%;
+}
+
+.cartao-noticia img {
+    width: 100%;
+    height: 100%;
+    min-height: 190px;
+    object-fit: cover;
+}
+
+.cartao-noticia-corpo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+}
+
+.cartao-noticia-corpo h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--roxo-escuro);
+}
+
+.cartao-noticia-corpo p {
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+}
+
+/* A data fica sempre no pé do cartão */
+.cartao-noticia-corpo .meta {
+    margin-top: auto;
+    font-size: 0.75rem;
+    color: var(--texto-suave);
+}
+
+/* Cartão em destaque: imagem ocupa tudo e o texto fica sobre ela */
+.cartao-noticia.destaque {
+    grid-row: span 2;
+    border: 0;
+}
+
+.destaque .cartao-noticia-link {
+    position: relative;
+    display: block;
+    min-height: 460px;
+}
+
+.destaque img {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+}
+
+/* Degradê roxo na base para dar leitura ao texto */
+.destaque .cartao-noticia-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(60, 1, 69, 0.95) 0%, rgba(60, 1, 69, 0.55) 45%, rgba(60, 1, 69, 0) 75%);
+}
+
+.destaque .cartao-noticia-corpo {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.destaque .cartao-noticia-corpo h3 {
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    color: var(--branco);
+}
+
+.destaque .cartao-noticia-corpo p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.destaque .cartao-noticia-corpo .meta {
+    margin-top: 0;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+}
