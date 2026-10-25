@@ -688,3 +688,44 @@ a:focus-visible {
 .estatistica-rotulo {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.75); }
+
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem var(--margem-lateral);
+    background-color: var(--verde-hero);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.rodape-marca {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rodape-logo {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rodape-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--branco);
+}
+
+.direitos {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+}
