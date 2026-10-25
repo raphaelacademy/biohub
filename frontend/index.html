@@ -1,39 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head >
-        <meta charset="UTf-8">
-        <title>BioHub - Portal Academico</title>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BioHub: artigos científicos, notícias e encontros da Liga Acadêmica de Biotecnologia da UniALFA">
+    <title>BioHub - Liga Acadêmica de Biotecnologia</title>
 
-        <!-- LINK PARA PASTA CSS-->
-         <link rel="stylesheet" href="css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    </head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
-        <header>
-            <nav>
 
-            <div class="info_logo">
-                    
-                <img src="img/img_logo_bihub.png" alt="Logo_BioHub" width="70">
-                <span>
-                    BioHub - Portal Academico
-                </span>
+<body>
+
+
+    <header class="cabecalho">
+        <a href="index.html" class="logo" aria-label="BioHub, ir para o início">
+            <img src="img/Logo Oficial - BioHub.jpeg" alt="" class="logo-img">
+            <span class="logo-nome">BioHub</span>
+        </a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="encontros.html">Encontros</a></li>
+            </ul>
+        </nav>
+
+        <a href="area-da-liga.html" class="botao-area-liga">Área da Liga &rarr;</a>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-conteudo">
+                <p class="etiqueta-topo">Liga Acadêmica de Biotecnologia &middot; UniALFA</p>
+
+                <h1 class="titulo-principal">
+                    Ciência que conecta.
+                    <em>Conhecimento que transforma</em>
+                </h1>
+
+                <p class="texto-descritivo">
+                    Artigos científicos, notícias e encontros para estudantes que constroem o futuro da Biotecnologia.
+                </p>
+
+                <div class="hero-botoes">
+                    <a href="artigos.html" class="btn-primario">Explorar artigos &rarr;</a>
+                    <a href="encontros.html" class="btn-secundario">Ver agenda</a>
+                </div>
             </div>
-            <!-- DIV DOS BOTOES DO NAVBAR-->
-            <div class="botoes_iniciais_login">
-                <button type="button" class="btn_entrar">Entrar</button>
 
-                <button type="button" class="btn_criarconta">Criar Conta</button>
+            <figure class="hero-imagem">
+                <img src="img/Gemini_Generated_Image_n9bl7xn9bl7xn9bl.jpg" alt="Pesquisador de touca e jaleco observando uma amostra em um microscópio">
+
+                <figcaption class="cartao-flutuante">
+                    <span class="numero">01</span>
+                    <span class="textos-cartao">
+                        <strong>Pesquisa em foco</strong>
+                        <span>Laboratório de Biomedicina</span>
+                    </span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="estatisticas" aria-label="A liga em números">
+            <ul class="lista-estatisticas">
+                <li class="estatistica">
+                    <span class="estatistica-numero">24</span>
+                    <span class="estatistica-rotulo">Artigos publicados</span>
+                </li>
+                <li class="estatistica">
+                    <span class="estatistica-numero">08</span>
+                    <span class="estatistica-rotulo">Encontros realizados</span>
+                </li>
+                <li class="estatistica">
+                    <span class="estatistica-numero">130+</span>
+                    <span class="estatistica-rotulo">Alunos participantes</span>
+                </li>
+                <li class="estatistica">
+                    <span class="estatistica-numero">06</span>
+                    <span class="estatistica-rotulo">Projetos em andamento</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="noticias" id="noticias" aria-labelledby="titulo-noticias">
+            <div class="cabecalho-secao">
+                <div>
+                    <p class="sobretitulo">Atualizações</p>
+                    <h2 id="titulo-noticias">Últimas notícias</h2>
+                </div>
+                <a href="noticias.html" class="link-secao">Ver todas &rarr;</a>
+            </div>
+
+            <div class="grid-noticias">
+
+                <article class="cartao-noticia destaque">
+                    <a href="noticias.html" class="cartao-noticia-link">
+                        <img src="img/Congresso de Biomedicina UniALFA.png" alt="Estudantes reunidos em um auditório durante um congresso">
+                        <div class="cartao-noticia-corpo">
+                            <span class="categoria categoria-congresso">Congresso</span>
+                            <h3>Inscrições abertas para o III Congresso de Biomedicina</h3>
+                            <p>submissão de trabalhos científicos até 20 de novembro.</p>
+                            <p class="meta"><time datetime="2026-10-10">10 out 2026</time></p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="cartao-noticia">
+                    <a href="noticias.html" class="cartao-noticia-link">
+                        <img src="img/Espaço UniALFA de Estudo Colaborativo.png" alt="Estudantes caminhando em área verde do campus">
+                        <div class="cartao-noticia-corpo">
+                            <span class="categoria categoria-representacao">Representação</span>
+                            <h3>Nova sala de estudos colaborativos é inaugurada no campus</h3>
+                            <p class="meta"><time datetime="2026-10-08">08 out 2026</time></p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="cartao-noticia">
+                    <a href="noticias.html" class="cartao-noticia-link">
+                        <img src="img/Resultado do Processo Seletivo UniALFA 2026.2.png" alt="Aluna realizando pipetagem em laboratório">
+                        <div class="cartao-noticia-corpo">
+                            <span class="categoria categoria-liga">Liga acadêmica</span>
+                            <h3>Resultado do processo seletivo para novos membros 2026.2</h3>
+                            <p class="meta"><time datetime="2026-09-15">15 set 2026</time></p>
+                        </div>
+                    </a>
+                </article>
 
             </div>
-            <div class="icone_menu">
+        </section>
 
-                <button type="button">&#9776;</button>
+        <section class="encontros" id="encontros" aria-labelledby="titulo-encontros">
+            <div class="encontros-layout">
+
+                <div class="encontros-intro">
+                    <p class="sobretitulo">Reserve a data</p>
+                    <h2 id="titulo-encontros">Próximos encontros</h2>
+                    <a href="encontros.html" class="btn-claro">Ver encontros &rarr;</a>
+                </div>
+
+                <div class="lista-encontros">
+
+                    <article class="cartao-evento">
+                        <time datetime="2026-11-05" class="data-evento">
+                            <span class="dia">05</span>
+                            <span class="mes">NOV</span>
+                        </time>
+                        <div class="info-evento">
+                            <h3>Biomarcadores no diagnóstico precoce do câncer</h3>
+                            <p class="detalhes-evento">Profa. Dra. Ana Paula Souza &middot; Bloco C, Sala 12 &middot; 19h</p>
+                        </div>
+                        <a href="encontros.html" class="acao-evento" aria-label="Ver detalhes: Biomarcadores no diagnóstico precoce do câncer">&rarr;</a>
+                    </article>
+
+                    <article class="cartao-evento">
+                        <time class="data-evento" datetime="2026-11-12">
+                            <span class="dia">12</span>
+                            <span class="mes">NOV</span>
+                        </time>
+                        <div class="info-evento">
+                            <h3>Hematologia clínica: casos práticos e interpretação laboratorial</h3>
+                            <p class="detalhes-evento">Profissional convidado &middot; Online, Google Meet &middot; 20h</p>
+                        </div>
+                        <a href="encontros.html" class="acao-evento" aria-label="Ver detalhes: Hematologia clínica">&rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+            <div class="rodape-marca">
+                <img src="img/Logo Oficial - BioHub.jpeg" alt="Logo da Liga Acadêmica de Biotecnologia" class="rodape-logo">
+                <div>
+                    <p class="rodape-titulo">BioHub</p>
+                    <p>Liga Acadêmica de Biotecnologia &middot; UniAlfa</p>
+                    <p>email-exemplo@biohub.com &middot; @lab-unialfa</p>
+                </div>
             </div>
 
-                
-            </nav>
-        </header>
-    </body>
+            <p class="direitos">&copy; 2026 Projeto BioHub &middot; Todos os Direitos Reservados</p>
+    </footer>
+</body>
 </html>
