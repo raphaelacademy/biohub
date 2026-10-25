@@ -652,3 +652,39 @@ a:focus-visible {
 }
 
 
+.estatisticas {
+    padding: 0 var(--margem-lateral);
+    background-color: var(--verde-manguezal);
+}
+
+.lista-estatisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.estatistica {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 2.25rem 1.5rem;
+}
+
+.estatistica:first-child {
+    padding-left: 0;
+}
+
+.estatistica + .estatistica {
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.estatistica-numero {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--verde-claro);
+}
+
+.estatistica-rotulo {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75); }
