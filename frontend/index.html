@@ -1,39 +1,343 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head >
-        <meta charset="UTf-8">
-        <title>BioHub - Portal Academico</title>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biohub</title>
 
-        <!-- LINK PARA PASTA CSS-->
-         <link rel="stylesheet" href="css/style.css"> 
-
+        <link rel="stylesheet" href="css/style.css">
     </head>
-
+    
     <body>
         <header>
-            <nav>
-
-            <div class="info_logo">
-                    
-                <img src="img/img_logo_bihub.png" alt="Logo_BioHub" width="70">
-                <span>
-                    BioHub - Portal Academico
+          <div class="faixa-superior">
+                <span class="ponto-verde"></span>
+                <strong>Biohub</strong>
+                <span class="nome-faixa">
+                    Liga Acadêmica de Biomedicina
                 </span>
+          </div>
+           <div class="header-principal">
+            <div class="logo-titulo">
+                <img src ="img/logo-projeto.png" class="logo" alt="logo do projeto">
+            <div class="titulo">
+                <h1>BioHub</h1>
+            <p>Liga Acadêmica de Biomedicina</p>
             </div>
-            <!-- DIV DOS BOTOES DO NAVBAR-->
-            <div class="botoes_iniciais_login">
-                <button type="button" class="btn_entrar">Entrar</button>
-
-                <button type="button" class="btn_criarconta">Criar Conta</button>
-
             </div>
-            <div class="icone_menu">
-
-                <button type="button">&#9776;</button>
-            </div>
-
+            <button class="menu-hamburger" id="menu-hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-links">
+                ☰
+            </button>
+            <nav>
+                <div class="links" id="menu-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#noticias">Notícias</a>
+                    <a href="#artigos">Artigos</a>
+                    <a href="#encontros">Encontros</a>
                 
+                    <a href="#area-da-liga" class="botao-especial">
+                        Área da Liga <span class="seta">&#8594;</span>
+                    </a>
+                </div>
             </nav>
+           </div> 
         </header>
+        
+        <main>
+            <section class="hero" id="inicio">
+
+    <div class="hero-conteudo">
+
+        <div class="hero-marca">
+            <img src="img/logo-projeto.png" alt="Logo BioHub">
+
+            <div class="hero-marca-info">
+                <span>MARCA DA LIGA</span>
+                <div class="marca-detalhes">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <span class="hero-categoria">
+            LIGA ACADÊMICA DE BIOMEDICINA
+        </span>
+
+        <h2>
+            Ciência que conecta.
+            <span>Conhecimento que transforma.</span>
+        </h2>
+
+        <p class="hero-descricao">
+            Artigos científicos, notícias e encontros para estudantes
+            que constroem o futuro da Biomedicina.
+        </p>
+
+        <div class="hero-botoes">
+            <a href="#artigos" class="hero-botao">
+                Explorar artigos <span>→</span>
+            </a>
+
+            <a href="#encontros" class="hero-botao secundario">
+                Ver agenda
+            </a>
+        </div>
+
+        <div class="hero-comunidade">
+            <div class="comunidade-icones">
+                <span>BI</span>
+                <span>PE</span>
+                <span>CB</span>
+            </div>
+
+            <div class="comunidade-texto">
+                <strong>Conhecimento para todos</strong>
+                <span>Faça parte dessa comunidade acadêmica.</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-imagem">
+
+        <img src="img/img-card1.png"
+             alt="Estudo e pesquisa em laboratório">
+
+        <div class="hero-legenda">
+            <span class="hero-numero">01</span>
+
+            <div>
+                <strong>Pesquisa em foco</strong>
+                <span>Ciência e conhecimento em Biomedicina</span>
+            </div>
+        </div>
+
+        </div>
+
+        </section>
+        <section class="registro">
+            <div class="stat-item">
+                <h2>24</h2>
+                <p>Artigos publicados</p>
+            </div>
+            <div class="stat-item">
+                <h2>08</h2>
+                <p>Encontros realizados</p>
+            </div>
+            <div class="stat-item">
+                <h2>130+</h2>
+                <p>Alunos participantes</p>
+            </div>
+            <div class="stat-item">
+                <h2>06</h2>
+                <p>Projetos em andamento</p>
+            </div>
+        </section>
+<section class="news-section">
+            <div class="news-header">
+                <div>
+                    <span class="section-label">ATUALIZAÇÕES</span>
+                    <h2>Últimas notícias</h2>
+                </div>
+
+                <a href="noticias.html" class="view-all">
+                    Ver todas →
+                </a>
+            </div>
+
+            <div class="news-grid">
+
+                <article class="news-card">
+                    <img src="img/noticia1.jpg" alt="imagem da primeira noticia">
+
+                    <div class="news-content">
+                        <span class="news-category">LIGA ACADÊMICA</span>
+                        <h3>
+                            Resultado do processo seletivo para novos membros
+                        </h3>
+                        <p>
+                            Confira os resultados e o cronograma de integração da liga.
+                        </p>
+                        <div class="news-footer">
+                            <span>15 set. 2026 ·  2 min de leitura</span>
+                    <a href="noticia1.html" aria-label="Ler notícia">→</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <img src="img/noticia2.jpg"
+                 alt="Estudantes em um congresso acadêmico">
+
+            <div class="news-content">
+                <span class="news-category">CONGRESSO</span>
+
+                <h3>Inscrições abertas para o
+                    congresso de Biomedicina</h3>
+
+                <p>Confira as informações sobre o evento
+                   e as inscrições.</p>
+
+                <div class="news-footer">
+                    <span>10 set. 2026 · 3 min de leitura</span>
+                    <a href="noticia2.html" aria-label="Ler notícia">→</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <img src="img/noticia3.jpg"
+                 alt="Espaço universitário de estudos">
+
+            <div class="news-content">
+                <span class="news-category">REPRESENTAÇÃO</span>
+
+                <h3>Nova sala de estudos colaborativos
+                    é inaugurada no campus</h3>
+
+                <p>Conheça o novo espaço para estudos
+                   e grupos de pesquisa.</p>
+
+                <div class="news-footer">
+                    <span>08 set. 2026 · 4 min de leitura</span>
+                    <a href="noticia3.html" aria-label="Ler notícia">→</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+        </main>
+
+        <section class="secao-encontros" id="encontros">
+
+            <div class="encontros-container">
+
+                <div class="encontros-cabecalho">
+                     
+                    <div>
+                        <span class="encontros-etiqueta">
+                            <span class="encontros-ponto"></span>
+                            FIQUE POR DENTRO
+                        </span>
+
+                        <h2>Reserve a data - Próximos encontros</h2>
+
+                        <p>
+                            Confira os próximos encontros da BioHub
+                            e participe dessa jornada de conhecimento.
+                        </p>
+                    </div>
+
+                    <a href="#lista-encontros" class="encontros-botao">
+                        Ver encontros <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="encontros-lista" id="lista-encontros">
+
+                    <article class="evento-card">
+                        <div class="evento-data">
+                            <span>15</span>
+                            <span>MAR</span>
+                        </div>
+
+                        <div class="evento-conteudo">
+                            <span class="evento-categoria">PALESTRA</span>
+
+                            <h3>Ciência e inovação na Biomedicina</h3>
+
+                            <p>
+                                <span>⌖</span> Auditório da instituição
+                            </p>
+                        </div>
+
+                        <span class="evento-seta">↗</span>
+                    </article>
+
+                    <article class="evento-card">
+                        <div class="evento-data">
+                            <span>22</span>
+                            <span>MAR</span>
+                        </div>
+
+                        <div class="evento-conteudo">
+                            <span class="evento-categoria">ENCONTRO</span>
+
+                            <h3>Conexões acaêmicas BioHub</h3>
+
+                            <p>
+                                <span>◷</span> 18h às 19h30
+                            </p>
+
+                            <p>
+                                <span>⌖</span> Sala de eventos
+                            </p>
+                        </div>
+
+                        <span class="evento-seta">↗</span>
+                    </article>
+
+                    <article class="evento-card">
+                        <div class="evento-data">
+                            <span>29</span>
+                            <span>MAR</span>
+                        </div>
+                        <div class="evento-conteudo">
+                            <span class="evento-categoria">WORKSHOP</span>
+
+                            <h3>Práticas e descobertas científicas</h3>
+
+                            <p>
+                                <span>◷</span> 14h às 16h
+                            </p>
+                            <p>
+                                <span>⌖</span> Laboratório da instituição
+                            </p>
+                        </div>
+
+                        <span class="evento-seta">↗</span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <footer class="biohub-rodape" id="rodape">
+
+            <div class="rodape-container">
+
+                <div class="rodape-identidade">
+                    <div class="rodape-marca">
+                        <img src="img/logo-projeto.png" alt="Logo BioHub">
+                    </div>
+
+                    <div>
+                        <h2>BioHub</h2>
+                        <p>Liga Acadêmica de Biomedicina</p>
+                    </div>
+                </div>
+
+                <p class="rodape-destricao">
+                    Ciência que conecta, conhecimento que transforma.
+                    Um espaço para compartilhar descobertas e fortalecer
+                    a comunidade acadêmica.
+                </p>
+
+                <div class="rodape-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#noticias">Notícias</a>
+                    <a href="#artigos">Artigos</a>
+                    <a href="#encontros">Encontros</a>
+                </div>
+
+                <div class="rodape-final">
+                    <p>© 2026 BioHub. Todos os direitos reservados.</p>
+                    <a href="#inicio">Voltar ao topo ↑</a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
