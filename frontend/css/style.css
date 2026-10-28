@@ -611,6 +611,243 @@ header {
     font-size: 22px;
     text-decoration: none;
 }
+.secao-encontros {
+    padding: 80px 24px;
+    background: linear-gradient(
+        135deg,
+        #E8F5E9 0%,
+        #F3E5F5 55%,
+        #E8F5E9 100%
+    );
+}
+.encontros-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.encontros-cabecalho {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+.encontros-etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #4A148C;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+.encontros-ponto {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #4CAF50;
+    box-shadow: 0 0 0 4px #C8E6C9;
+}
+.encontros-cabecalho h2 {
+    max-width: 650px;
+    margin: 0 0 12px;
+    color: #1B5E20;
+    font-size: clamp(27px, 4vw, 40px);
+    line-height: 1.2;
+}
+.encontros-cabecalho p {
+    max-width: 600px;
+    margin: 0;
+    color: #555;
+    line-height: 1.7;
+}
+.encontros-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-shrink: 0;
+    padding: 14px 21px;
+    border-radius: 12px;
+    background: #4A148C;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+.encontros-botao:hover {
+    background: #31105C;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #4A148C30;
+}
+.encontros-lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+.evento-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    min-width: 0;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #D9E8DC;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #244B3020;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+    cursor: pointer;
+}
+.evento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px #244B3030;
+}
+.evento-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    min-height: 70px;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #E8F5E9, #F3E5F5);
+    color: #1B5E20;
+}
+.evento-data span:first-child {
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.evento-data span:last-child {
+    margin-top: 4px;
+    color: #6A1B9A;
+    font-size: 12px;
+    font-weight: 800;
+}
+.evento-categoria {
+    color: #6A1B9A;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+.evento-conteudo h3 {
+    margin: 10px 0 18px;
+    padding-right: 5px;
+    color: #1B5E20;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.evento-conteudo p {
+    display: flex;
+    gap: 9px;
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.evento-conteudo p span {
+    color: #6A1B9A;
+    font-weight: 800;
+}
+.evento-seta {
+    align-self: flex-end;
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #E8F5E9;
+    color: #1B5E20;
+    font-size: 19px;
+}
+.biohub-rodape {
+    padding: 16px 24px 10px;
+    background: linear-gradient(
+        115deg,
+        #123D2A,
+        #183B35 55%,
+        #35105C
+    );
+    color: #fff;
+}
+.rodape-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.rodape-identidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rodape-marca {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4CAF50, #7B1FA2);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    overflow: hidden;
+    padding: 0;
+}
+.rodape-marca img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.rodape-identidade h2 {
+    margin: 0 0 2px;
+    font-size: 20px;
+}
+.rodape-identidade p {
+    margin: 0;
+    color: #D7E7DA;
+    font-size: 11px;
+}
+.rodape-descricao {
+    max-width: 530px;
+    margin: 8px 0;
+    color: #E0E9E2;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.rodape-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #FFFFFF25;
+}
+.rodape-links a,
+.rodape-final a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.rodape-links a:hover,
+.rodape-final a:hover {
+    color: #A5D6A7;
+}
+.rodape-final {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 9px;
+    border-top: 1px solid #FFFFFF25;
+}
+.rodape-final p {
+    margin: 0;
+    color: #D7E7DA;
+    font-size: 11px;
+}
 @media (max-width: 900px) {
     .header-principal {
         flex-wrap: wrap;
@@ -660,7 +897,15 @@ header {
     .news-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .encontros-lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .evento-card:last-child {
+        grid-column: 1 / -1;
+    }
 }
+
 .menu-hamburger {
     display:none;
     background-color: #2E7D32;
@@ -822,5 +1067,43 @@ header {
     }
     .news-content {
         padding: 18px;
+    }
+    .secao-encontros {
+        padding: 55px 18px;
+    }
+
+    .encontros-cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .encontros-botao {
+        align-self: flex-start;
+    }
+
+    .encontros-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .evento-card:last-child {
+        grid-column: auto;
+    }
+
+    .evento-card {
+        padding: 22px;
+    }
+
+    .biohub-rodape {
+        padding: 35px 18px 20px;
+    }
+
+    .rodape-links {
+        gap: 18px;
+    }
+
+    .rodape-final {
+        align-items: flex-start;
+        flex-direction: column;
     }
 } 
